@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
@@ -201,7 +200,6 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-
 .inside header {
   position: fixed;
   top: 0;
@@ -325,9 +323,6 @@ ul#reviews-list li {
 }
 
 /****** MEDIA QUERIES ******/
-
-
-/* Medium:  larger than 600 */
 @media screen and (min-width: 600px) {
 
   #restaurants-list {
@@ -380,9 +375,8 @@ ul#reviews-list li {
   }
 }
 
-/* Large - If screen is greater than 900*/
-@media screen and (min-width: 900px) {
 
+@media screen and (min-width: 900px) {
   #restaurants-list {
     display: flex;
     justify-content: space-around;

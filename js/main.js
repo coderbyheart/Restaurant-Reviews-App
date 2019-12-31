@@ -3,7 +3,8 @@ let blub_urls = {};
 let restarants_li = {};
 let initialload = false;
 window.markers = [];
-const ldb = reqiore('ldb');
+//const ldb = reqiore('ldb');
+const ldb = require('ldb');
 
 var newMap
 var markers = []
@@ -76,8 +77,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  * Initialize leaflet map, called from HTML.
  */
  initMap = () => {
-   // if online, then 'try' to load the map
-   // if not, then 'catch' an error and log it
+   // if online, then 'try' to load the map. if not, then 'catch' an error and log it
    if(navigator.onLine) {
      try {
        self.newMap = L.map('map', {
@@ -223,4 +223,3 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
      self.markers.push(marker);
    });
  } */
- 
